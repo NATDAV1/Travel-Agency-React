@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(../images/nathan-anderson-316188-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    padding-top: 15em;
+    padding-bottom: 15em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgheader {
+    position: center;
+    height: 35px;
+    width: 120px;
+    color: black;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 80;
+    width: 100%;
+    background-color: rgb(3, 5, 70);
+    background-image: linear-gradient(to right, rgb(21, 21, 226), rgb(3, 5, 70));
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: rgb(85, 88, 177) !important;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-whatsapp {
+    background: white;
+    color: green;
+}
+
+.fa-facebook {
+    background: white;
+    color: #3b5998;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.viaja {
+    font-weight: bold;
+    color: white;
+}
+
+button {
+    background-color: yellow;
+    border: none;
+    color: rgb(3, 5, 70);
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(85, 88, 177);
+    color: yellow;
+}
+
+/* prices------------------------------------------------------------*/
+.container {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    width: auto;
+}
+
+.topcover {
+    background-color: rgb(3, 5, 70);
+    color: white;
+    position: absolute;
+    width: 90%;
+    font-size: 18px;
+    z-index: 2;
+    padding: 0.7em;
+}
+
+.topright {
+    background-color: yellow;
+    color:black;
+    position: absolute;
+    top: 0px;
+    width: 20%;
+    right: 0.5em;
+    font-size: 30px;
+    padding-top: 20px;
+    z-index: 3;
+}
+
+/* --Quien Somos ---------------------------------------------------- */
+.quienSomos {
+    background-image: url(../images/travel_1.jpg);
+    background-position: center;
+    background-size: 100vw;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+u {
+    text-decoration: none;
+    border-bottom: 5px solid yellow;
+}
+
+.quienSomosContent {
+    margin: 3em;
+    width: 40%;
+    background-color: white;
+    border: none;
+    padding: 1em;
+}
+
+.quienSomosContent p {
+    text-align: justify;
+}
+
+/* Contact us style inputs------------------------------------------------------- */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=sendmsg] {
+    background-color: rgb(3, 5, 70);
+    border: none;
+    color: yellow;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.3s;
+
+}
+
+input[type=sendmsg]:hover {
+    background-color: yellow;
+    color: rgb(3, 5, 70);
+}
+
+/* Style the container/contact section */
+
+.container-input {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: black;
+    padding: 10px;
+}
+
+.container-input div {
+    text-align: justify
+}
+
+.row {
+    display: flex;
+}
+
+/* Create two columns that flex next to eachother */
+.column {
+    display: flex;
+    justify-content: space-between;
+    padding: 7em;
+    padding-top: 2em;
+}
+
+/* Responsive layout - when the screen is less than 990px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 990px) {
+    header .quienSomos {
+        background-image: none;
+    }
+
+    .quienSomosContent {
+        width: unset;
+    }
+
+    .container-input {
+        display: none;
+    }
+
+    .redessociales {
+        display: none;
+    }
+}
+
+/* Footer ---------------------------------------------------*/
+footer {
+    /* display: flex; */
+    background: rgb(3, 5, 70);
+    color: white;
+    font-weight: bold;
+    box-align: center;
+
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    flex-wrap: wrap;
+}
+
+ul {
+    all: unset;
+}
+
+li {
+    list-style: none;
+    text-align: left;
+}
+
+.register {
+    background-image: url(../images/journeys.jpg);
+    padding-top: 12em;
+    padding: 10em 30vw;
+}
+
+.login {
+    background-image: url(../images/plane-login.jpeg);
+    background-position: center;
+    padding-top: 12em;
+    padding: 10em 30vw;
+}
